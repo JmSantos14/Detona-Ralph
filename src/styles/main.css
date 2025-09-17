@@ -65,14 +65,14 @@ main{
 }
 
 .panel{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
     align-items: center;
     justify-content: center;
 }
 
 .square{
-    height: 150px;
-    width: 150px;
+    height: 120px;
     border: 1px solid #000000;
     background-color: #fff;
     border-radius: 10px;
@@ -99,3 +99,19 @@ main{
 #restartBtn:hover{
     transform: translateY(-2px);
 }
+
+@media only screen and (max-width: 810px) {
+    .menu{
+        padding-inline: 15px;
+    }
+    .menu-time h2, .menu-score h2{
+        font-size: 1.1rem;
+    }
+    .image{
+        height: 45px;
+    }
+    #lifeCount{
+        font-size: 1rem;
+    }
+}
+
