@@ -28,8 +28,13 @@
             </div>
             <div class="menu-lives">
                 <img src="./src/images/player.png" alt="Foto do Jogador" height="50px">
-                <h2>x3</h2>
+                <h2 id="lifeCount">x3</h2>
             </div>
+        </div>
+
+        <div class="buttonArea">
+            <button id="easyMode" class="btn" onclick="changeToEasy()">Easy</button>
+            <button id="hardMode" class="btn" onclick="changeToHard()">Hard</button>
         </div>
 
         <div class="panel">
@@ -50,7 +55,9 @@
                 <div class="square" id="8"></div>
                 <div class="square" id="9"></div>
             </div>
+
         </div>
+        <button id="restartBtn" onclick="resetGame()">Reiniciar</button>
     </main>
 
     <script defer src="./src/scripts/engine.js"></script>
